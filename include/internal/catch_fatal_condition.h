@@ -33,7 +33,7 @@ namespace Catch {
 
 } // namespace Catch
 
-#elif defined ( CATCH_CONFIG_POSIX_SIGNALS )
+#elif defined ( CATCH_CONFIG_POSIX_SIGNALS ) && !defined (__MINGW32__)
 
 #include <signal.h>
 
